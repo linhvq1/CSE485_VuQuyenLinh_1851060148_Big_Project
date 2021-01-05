@@ -1,0 +1,52 @@
+.card {
+    padding: 25px;
+    border-color: transparent;
+    box-shadow: 0 1px 32px rgba(20, 23, 26, .12);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border-radius: 3px;
+    background-color: $card-bg-light;
+    p:last-of-type {
+        margin-bottom: 35px;
+    }
+    .title {
+        color: $blue;
+        i {
+            margin-right: 5px;
+        }
+    }
+    .interests i {
+        font-size: 30px;
+    }
+    &--stats {
+        padding: 15px 10px;
+        i {
+            font-size: 30px;
+        }
+        p {
+            font-size: 12px;
+            color: $blue;
+        }
+    }
+}
+
+.sideline {
+    overflow: hidden;
+    &:before,
+    &:after {
+        background-color: #000;
+        content: '';
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    &:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
