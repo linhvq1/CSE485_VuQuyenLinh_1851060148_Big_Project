@@ -241,6 +241,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-sm-12 col-md-7 col-lg-9 content contact" data-simplebar id="contact">
+                    <div class="row mt-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                            <h3 class="font-weight-bold sideline">Contact</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi praesentium repellat unde doloribus pariatur eaque! Nostrum magni doloribus, eveniet amet, deleniti quidem iure labore, dolore quod placeat nulla dolor corporis.</p>
+                            <ul class="list-unstyled">
+                                <li class="font-weight-bold"><a href="#"><i class="fas fa-envelope mr-2"></i>myemailexample@gmail.com</a></li>
+                                <li class="font-weight-bold"><a href="#"><i class="fas fa-globe mr-2"></i>http://website.com</a></li>
+                                <li class="font-weight-bold"><a href="#"><i class="fas fa-map-marker-alt mr-2"></i>Ha Noi, Viet Nam</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                            <form action="#" class="card">
+                                <div class="form-group">
+                                    <label for="full-name label">Full Name</label>
+                                    <input type="text" id="full-name" placeholder="Full Name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="full-email label">Full Name</label>
+                                    <input type="email" id="full-email" placeholder="Full email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="full-message label">Full Name</label>
+                                    <textarea type="message" row="5" id="full-message" placeholder="Full message" class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
