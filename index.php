@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/root.min.css">
