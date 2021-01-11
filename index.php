@@ -17,8 +17,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-white sidebar background-blue">
-                    <div class="mx-auto">
-                        <figure class="profile-image mx-auto">
+                    <div class="col-md-12 mx-auto">
+                        <figure class="profile-image mx-auto d-flex flex-column justify-content-center">
                             <img class="img-fluid rounded-circle" src="img/unnamed.png" alt="profile_pic">
                             <figcaption class="text-center"><small class="d-block">Vu</small>Linh</figcaption>
                         </figure>
@@ -43,7 +43,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt dignissimos possimus voluptatibus ad, cum nemo hic recusandae architecto voluptas consectetur nisi. Quas cupiditate vitae recusandae ex dolore amet ipsum!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt. Blanditiis sapiente similique tenetur vitae laudantium modi sed pariatur!</p>
                         <h3 class="sideline font-weight-bold mb-3">Hobbies and Interests</h3>
-                        <div class="row interests">
+                        <div class="row interests mb-3">
                             <div class="col-4 col-md-4 col-lg-2 text-center mt-3">
                                 <i class="text-primary fas fa-tree mb-3"></i>
                                 <h6 class="font-weight-bold">Outdoors</h6>
@@ -68,6 +68,81 @@
                                 <i class="text-primary fas fa-plane mb-3"></i>
                                 <h6 class="font-weight-bold">Travel</h6>
                             </div>
+                        </div>
+                        <h3 class="sideline font-weight-bold mb-3">Skills & Proficiency</h3>
+                        <style>
+                                .item .card{
+                                    box-shadow: none;
+                                    padding: 0px 15px 5px 15px;
+                                    /* padding-left: 15px; */
+                                }
+                                @media (max-width: 992px) {
+                                    .level-title{
+                                        font-size: 15px;
+                                    }
+                                    .level-title-1{
+                                        margin-left: 4px;
+                                        font-size: 14px;
+                                    }
+                                }
+                        </style>
+                        <div class="skillset d-flex flex-column align-items-start">
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-ubuntu fs-2"></i>
+                                    <h5 class="level-title level-title-1 text-wrapper ml-2 mt-1">OutSystems</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                           
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-stack-overflow fs-2"></i>
+                                    <h5 class="level-title text-wrapper ml-2 mt-1">MEAN Stack</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-windows fs-2"></i>
+                                    <h5 class="level-title text-wrapper ml-2 mt-1">C#/C++</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-html5 fs-2"></i>
+                                    <h5 class="level-title text-wrapper ml-2 mt-1">HTML5 &amp; CSS</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-python fs-2"></i>
+                                    <h5 class="level-title text-wrapper ml-2 mt-1">Python</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                            <div class="row item w-100">
+                                <div class="col-lg-3 card card--stats d-flex flex-row align-items-center">
+                                    <i class="fab fa-java fs-2"></i>
+                                    <h5 class="level-title text-wrapper ml-2 mt-1">java</h5>
+                                </div>
+                                <div class="col-lg-9 progress mt-2 pl-0 pr-0 level-bar">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" ></div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+ 
                         </div>
                     </div>
                     <div class="row mt-5">
