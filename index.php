@@ -1,3 +1,10 @@
+<?php 
+    
+    // See the password_hash() example to see where this came from.
+    // $getNewPass = "1234";
+    // $hashNewPass = password_hash($getNewPass, PASSWORD_DEFAULT);
+    // echo $hashNewPass;
+?> 
 <!doctype html>
 <html lang="en">
   <head>
@@ -151,7 +158,7 @@
                                 <i class="text-primary fa fa-award ml-2"></i>
                                 <div class="text-wrapper">
                                     <h5 class="font-weight-bold ml-3 mb-0">3 Years</h5>
-                                    <p class="ml-3 mb-0">Experiences</p>
+                                    <p class="ml-3 mb-0">Work Experiences</p>
                                 </div>
                             </div>
                         </div>
@@ -323,6 +330,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi praesentium repellat unde doloribus pariatur eaque! Nostrum magni doloribus, eveniet amet, deleniti quidem iure labore, dolore quod placeat nulla dolor corporis.</p>
                             <ul class="list-unstyled">
                                 <li class="font-weight-bold"><a href="#"><i class="fas fa-envelope mr-2"></i>myemailexample@gmail.com</a></li>
+                                <li class="font-weight-bold"><a href="#"><i class="fas fa-phone mr-2"></i>0123456789</a></li>
                                 <li class="font-weight-bold"><a href="#"><i class="fas fa-globe mr-2"></i>http://website.com</a></li>
                                 <li class="font-weight-bold"><a href="#"><i class="fas fa-map-marker-alt mr-2"></i>Ha Noi, Viet Nam</a></li>
                             </ul>
@@ -334,11 +342,11 @@
                                     <input type="text" id="full-name" placeholder="Full Name" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="full-email label">Full Name</label>
+                                    <label for="full-email label">Full Email</label>
                                     <input type="email" id="full-email" placeholder="Full email" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="full-message label">Full Name</label>
+                                    <label for="full-message label">Full Message</label>
                                     <textarea type="message" row="5" id="full-message" placeholder="Full message" class="form-control"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
