@@ -2,6 +2,10 @@
                         <?php
                         require("../../database/dbhandler.php");
                         include("../../config/path.php");
+                        session_start();
+                        if(!isset($_SESSION["login"])){
+                            header("location: ".constant("URL")."/server/");
+                        }
                         if (isset($_REQUEST['port-id'])) {
                             $getID = $_REQUEST['port-id'];
                             $port = queryhandler("select * from portfolio where id_p= ?", "get", [$getID]);

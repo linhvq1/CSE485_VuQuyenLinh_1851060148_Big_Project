@@ -1,6 +1,10 @@
 <?php
 require("../../database/dbhandler.php");
 include("../../config/path.php");
+session_start();
+if(!isset($_SESSION["login"])){
+    header("location: ".constant("URL")."/server/");
+}
 if(isset($_POST['submit'])){
     $getNamesocial = $_POST['social-name'];
     $getIconsocial = $_POST['social-icon'];

@@ -3,7 +3,9 @@
                         session_start();
                         require("../../database/dbhandler.php");
                         include("../../config/path.php");
-                        
+                        if(!isset($_SESSION["login"])){
+                            header("location: ".constant("URL")."/server/");
+                        }
                             if (isset($_POST['change-port'])) {
                                
                                 $gettype =$_REQUEST['type-port'];//echo $gettype;

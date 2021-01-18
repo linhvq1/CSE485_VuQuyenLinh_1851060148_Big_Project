@@ -2,6 +2,9 @@
 require("../../database/dbhandler.php");
 include("../../config/path.php");
 session_start();
+if(!isset($_SESSION["login"])){
+    header("location: ".constant("URL")."/server/");
+}
 $admin = queryhandler("Select * from admin LIMIT 1","get");
     if(isset($_POST['change-port-info'])){
         if(isset($_SESSION['port'])){
