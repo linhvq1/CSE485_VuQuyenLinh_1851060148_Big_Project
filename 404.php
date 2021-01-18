@@ -6,6 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon/favicon (1).ico" rel="icon" type="image/x-icon" />  
   <title>Page not found</title>
   <link rel="icon" href="./public/favicon.ico"/> <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <style>
