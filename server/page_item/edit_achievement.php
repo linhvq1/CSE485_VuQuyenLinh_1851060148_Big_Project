@@ -9,7 +9,9 @@ $admin = queryhandler("Select * from admin LIMIT 1","get");
 if(isset($_GET['id'])){
     $getID = $_REQUEST['id'];
     $achi = queryhandler("Select * from achievement where id_achi = ?","get",[$getID]);
-}
+}else{
+    header("location: ".constant("URL")."/404.php");
+  }
 ?>
 <!doctype html>
 <html lang="en">

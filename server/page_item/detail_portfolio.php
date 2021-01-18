@@ -9,6 +9,8 @@ $admin = queryhandler("Select * from admin LIMIT 1","get");
 if(isset($_GET['id'])){
     $getID = $_REQUEST['id'];
     $pf = queryhandler("select * from portfolio where id_p = ?","get",[$getID]);
+}else{
+  header("location: ".constant("URL")."/404.php");
 }
 ?>
 <!doctype html>

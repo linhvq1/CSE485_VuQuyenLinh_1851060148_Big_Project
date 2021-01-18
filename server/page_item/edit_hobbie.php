@@ -9,7 +9,9 @@ $admin = queryhandler("Select * from admin LIMIT 1","get");
 if(isset($_GET['id'])){
     $getID = $_REQUEST['id'];
     $hobbie = queryhandler("Select * from hobbies where id_h = ?","get",[$getID]);
-}
+}else{
+    header("location: ".constant("URL")."/404.php");
+  }
 ?>
 <!doctype html>
 <html lang="en">

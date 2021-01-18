@@ -9,6 +9,8 @@ $admin = queryhandler("Select * from admin LIMIT 1","get");
 if(isset($_GET['id'])){
     $getID = $_REQUEST['id'];
     $skill = queryhandler("select * from skill where id_s = ?","get",[$getID]);
+}else{
+  header("location: ".constant("URL")."/404.php");
 }
 ?>
 <!doctype html>
