@@ -9,7 +9,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="./favicon/favicon (1).ico" rel="icon" type="image/x-icon" />  
+    <link rel="icon" href="../favicon/favicon_key.ico" type="image/x-icon">    <!-- Bootstrap CSS -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="../fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">  
