@@ -54,30 +54,27 @@ body {
 .page_m_s{
   font-size: 13px;
 }
-#pagesmenu li{
-
-}
 </style>
 <div id="mySidenav" class="sidenav">
   <h2 class="title text-white text-center">Admin</h2>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><i class="fas fa-house-user"></i><i class="fas fa-house-user"></i> Dashboard</a>
-  <a href="#"><i class="fas fa-atom"></i> Skills</a>
-  <a href="#"><i class="fas fa-palette"></i> Hobbies</a>
-  <a href="#"><i class="fas fa-user-graduate"></i> Experiences</a>
-  <a href="#"><i class="fas fa-trophy"></i> Achievement</a>
-  <a href="#"><i class="fas fa-suitcase"></i> Portfolio</a>
-  <a href="#"><i class="fas fa-satellite-dish"></i> Social Media</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="<?php echo constant("URL")."/server/dashboard.php"?>"><i class="fas fa-home"></i> Dashboard</a>
+  <a href="<?php echo constant("URL")."/server/page_item/skill.php"?>"><i class="fas fa-atom"></i> Skills</a>
+  <a href="<?php echo constant("URL")."/server/page_item/hobbie.php"?>"><i class="fas fa-palette"></i> Hobbies</a>
+  <a href="<?php echo constant("URL")."/server/page_item/experience.php"?>"><i class="fas fa-user-graduate"></i> Experiences</a>
+  <a href="<?php echo constant("URL")."/server/page_item/achievement.php"?>"><i class="fas fa-trophy"></i> Achievement</a>
+  <a href="<?php echo constant("URL")."/server/page_item/portfolio.php"?>"><i class="fas fa-suitcase"></i> Portfolio</a>
+  <a href="<?php echo constant("URL")."/server/page_item/social_media.php"?>"><i class="fas fa-satellite-dish"></i> Social Media</a>
   <div class="collapse_p">
     <a href="#pagesmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down">
         <i class="fas fa-pager"></i> Pages
     </a>
     <ul class="collapse list-unstyled w-75" id="pagesmenu">
         <li class="ml-2">
-          <a target="_blank" href="#"><i class="fas fa-cannabis page_m_i"></i> <span class="page_m_s">CV Page</span></a>
+          <a target="_blank" href="<?php echo constant("URL").""?>"><i class="fas fa-cannabis page_m_i"></i> <span class="page_m_s">CV Page</span></a>
         </li>
         <li class="ml-2">
-          <a target="_blank" href="#"><i class="fas fa-exclamation-triangle page_m_i"></i> <span class="page_m_s">404 ERROR Page</span></a>
+          <a target="_blank" href="./../../404.php"><i class="fas fa-exclamation-triangle page_m_i"></i> <span class="page_m_s">404 ERROR Page</span></a>
         </li>
       </ul>
   </div>

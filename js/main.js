@@ -1,3 +1,5 @@
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
 //change the current window shown by toggling the active class
 $('.main-menu a').on('click', function() {
     // cat bo ki tu dau tien cua id lay duoc
@@ -56,3 +58,7 @@ var filterizr = new Filterizr('.filter-container', options);
 $('.popup-link').magnificPopup({
     type: 'image'
 });
+
+//carousel
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
