@@ -93,7 +93,7 @@ $skill = queryhandler("SELECT * FROM skill","get");
                                 </dd>
                             </dl>
                             </div>
-                            <button class="btn btn-success mt-3 mb-2" type="submit" name="submit">Add Hobbie</button>
+                            <button class="btn btn-success mt-3 mb-2" type="submit" name="submit">Add Skill</button>
                         </div>
                         </div>
                     </div>
