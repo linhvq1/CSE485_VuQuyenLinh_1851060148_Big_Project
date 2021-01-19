@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
       $mail->MsgHTML($body);// noi dung chinh cua mail se nam o day.
       $mail->AddAddress($mTo, $nTo);
       if($mail->Send()) {
-        $_SESSION["send"] = "Send ok!";
+        $_SESSION["sent"] = "Send ok!";
         header("location:".constant("URL")."");
       } else {
         echo 'Error!';

@@ -9,14 +9,14 @@
     $exper = queryhandler("SELECT * FROM experience","get");
     $typeP = queryhandler("SELECT * FROM type_portfolio","get");
     $pfo = queryhandler("SELECT * FROM portfolio","get");
-    if(isset($_SESSION['send'])){
+    if(isset($_SESSION['sent'])){
         
 ?>
   <div class="alert alert-Primary alert-dismissible text-center">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>SENT!</strong> Thank for your contribute!!!
   </div>
-<?php   unset($_SESSION['send']);
+<?php   unset($_SESSION['sent']);
     }
 ?> 
 <!doctype html>
