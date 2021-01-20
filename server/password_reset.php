@@ -1,7 +1,7 @@
 <?php
   include("./config/path.php");
   require("./database/dbhandler.php");
-?>
+  ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -46,7 +46,10 @@
                 session_start();
                 if(isset($_SESSION["error"])) {
                   echo '
-                    <div class="alert alert-danger">'.$_SESSION["error"].'</div>
+                  <div class="alert alert-Primary alert-dismissible text-center">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      <strong>ERROR!</strong>.$_SESSION["error"].
+                  </div>
                   ';
                   unset($_SESSION["error"]);
                 }
@@ -83,12 +86,35 @@
                       </form>
                     ';
                   } else {
-                    echo '
+                      if (isset($_SESSION['error_pass_confirm'])) {
+                          ?>
+                          <div class="alert alert-Primary alert-dismissible text-center">
+                              <button type="button" class="close" data-dismiss="alert">&times;</button>
+                              <strong>ERROR!</strong> Incorrect password confirm!!!!
+                          </div>
+                      <?php   unset($_SESSION['error_pass_confirm']);
+                      echo '
+                      <form class="form-signin" action="./validator/change_pass.php" method="post" enctype="multipart/form-data">
+                        <div class="form-label-group">
+                          <label for="pwd">Password</label>
+                          <input type="password" id="pwd" class="pass-reset form-control" name="newPass" required autofocus>
+                        </div>
+                        <div class="form-label-group">
+                          <label for="cpwd">Confirm Password</label>
+                          <input type="password" id="cpwd" class="confirmPass form-control" name="confirmPass" required>
+                        </div>
+                        <button class="btn btn-success btn-block mt-3" type="submit" name ="changePassword">Change Password</button>
+                        <hr class="my-4">
+                      </form>
+                    ';
+                      } else {
+                      echo '
                       <h6 class="reset-pass text-center">'.$_SESSION["ok"].'</h6>
                       <a href="'.constant("URL")."/server/".'" class="btn btn-success btn-block mt-3"">Return the log in</a>
                       <hr class="my-4">
                     ';
-                    unset($_SESSION["ok"]);
+                      unset($_SESSION["ok"]);
+                  }
                   }
                 }
               ?>
