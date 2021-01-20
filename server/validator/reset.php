@@ -1,5 +1,6 @@
 <?php
 require("../database/dbhandler.php");
+include("../config/path.php");
 session_start();
 require("../config/login.php");
 if(isset($_POST['resetpass'])){
@@ -7,6 +8,7 @@ if(isset($_POST['resetpass'])){
     $admin = queryhandler("SELECT email FROM admin WHERE email=?","get",[$getEmail]);
     if(count($admin) == 0){
         $_SESSION["error"] = "Incorrect email";
+        header("location:".constant("URL")."/server/password_reset.php");
     }else{
         $_SESSION["ok"] = "Check your email for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.";
       //PHPMailer
@@ -40,6 +42,7 @@ if(isset($_POST['resetpass'])){
       if($mail->Send()) {
         $_SESSION["send"] = "Send ok!";
       } else {
+        //header("location:".constant("URL")."/server/password_reset.php");
         echo 'Error!';
       }
     }
