@@ -1,5 +1,7 @@
 <?php
     require("../database/dbhandler.php");
+    include("../config/path.php");
+
     session_start();
     require("../config/login.php");
     if(isset($_POST["submit"])){
@@ -11,12 +13,15 @@
                 login($getEmail,$admin[0]['role']);
                 echo 'Successfully';
                 //
-                include("../config/path.php");
-                header("location: ".constant("URL")."./server/dashboard.php");
+                header("location: ".constant("URL")."/server/dashboard.php");
             }else{
+                $_SESSION['error_pass_email'] = "error";
+                header("location: ".constant("URL")."/server/index.php");
                 echo "Incorrect email or password!";
             }
         } else{
+            $_SESSION['error_pass_email'] = "error";
+            header("location: ".constant("URL")."/server/index.php");
             echo "Incorrect email or password!";
         }
     }
