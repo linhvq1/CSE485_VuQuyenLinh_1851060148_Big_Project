@@ -4,7 +4,15 @@
     if(isset($_SESSION["login"])){
         header("location: ".constant("URL")."/server/dashboard.php");
     }
+    if(isset($_SESSION['error_pass_email'])){       
 ?>
+    <div class="alert alert-Primary alert-dismissible text-center">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>ERROR!</strong> Incorrect email or password!!!!
+    </div>
+<?php   unset($_SESSION['error_pass_email']);
+    }
+?> 
 
 <!doctype html>
 <html lang="en">
