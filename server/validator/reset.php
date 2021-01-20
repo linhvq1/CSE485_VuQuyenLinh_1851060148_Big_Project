@@ -1,4 +1,5 @@
 <?php
+echo '<link href="../../favicon/favicon_key.ico" rel="icon" type="image/x-icon" /> ';
 require("../database/dbhandler.php");
 include("../config/path.php");
 session_start();
