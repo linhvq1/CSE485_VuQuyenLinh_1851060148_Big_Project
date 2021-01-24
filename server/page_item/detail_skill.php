@@ -44,7 +44,7 @@ if(isset($_GET['id'])){
                   <p><strong>Type:</strong> <?php echo $skill[0]["type"]; ?></p>
                   <p><strong>Icon:</strong> <i class="<?php echo $skill[0]["icon_s"]; ?>"></i></p>
                   <p><strong>Progress:</strong><?php echo $skill[0]["progress"]; ?></p>
-                  <p><strong>Background:</strong><?php echo $skill[0]["background"]; ?></p>
+                  <p><strong>Background: </strong><span class="text-<?php echo $skill[0]["background"]; ?>"><?php echo $skill[0]["background"]; ?></span></p>
                   <p><strong>Description:</strong> <?php echo ucwords($skill[0]["detail"]); ?></p>
                 </div>
                 <a style="margin-left: 50%;" class="btn btn-primary" href="skill.php" role="button">back</a>
