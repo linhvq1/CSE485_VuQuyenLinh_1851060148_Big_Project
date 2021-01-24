@@ -84,9 +84,9 @@ if(isset($_GET['id'])){
                                 <label for="admin-job">Background</label>
                                 </dt>
                                 <dd>
-                                <select class="field-data data-job form-control" name="skill-background">
+                                <select class=" field-data data-job form-control lol " name="skill-background">
                                     <?php
-                                    $background = array("Success", "Secondary", "Primary", "Danger", "Warning", "Info","Light","Dark","Muted","White");
+                                    $background = array("success", "secondary", "primary", "danger", "warning", "info","light","dark","muted","white");
                                     foreach($background as $bg) {
                                         if($j == $skill[0]["background"]) {
                                         continue;
@@ -111,7 +111,21 @@ if(isset($_GET['id'])){
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>  
+    <script src="../../js/bootstrap.min.js"></script>
+    <script>
+    //     $(".lol").change(function(){
+    //         var cc = $(this).val();
+    //         var ha = "text-"+cc;
+    //         // alert(ha);
+    //         $(this).addClass(function(index, current){
+    //     var newClass;
+    //     if(current == "blue") {
+    //         newClass = "bdrRed";
+    //     }
+    //     return newClass;
+    // });
+    //     });
+    </script>
 </body>
   </body>
 </html>
